@@ -21,7 +21,7 @@ class PhoneController extends Controller
         $this->validate($request, [
             'name' => 'required|max:255',
             'brand' => 'required',
-            'price' => 'required',
+            'price' => 'required|regex:/^\d+(\.\d{1,2})?$/',
             'state' => 'required',
         ]);
 
@@ -57,7 +57,7 @@ class PhoneController extends Controller
 
     public function destroy($id)
     {
-        $phone = Phone::find($id)->first();
+        $phone = Phone::find($id);
 
         $phone->delete();
 
