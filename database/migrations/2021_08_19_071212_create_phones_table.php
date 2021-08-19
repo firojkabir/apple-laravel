@@ -18,7 +18,7 @@ class CreatePhonesTable extends Migration
             $table->string('name');
             $table->string('brand');
             $table->double('price');
-            $table->boolean('active');
+            $table->boolean('state');
             $table->timestamps();
         });
     }

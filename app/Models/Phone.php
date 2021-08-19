@@ -13,6 +13,6 @@ class Phone extends Model
         'name',
         'brand',
         'price',
-        'active',
+        'state',
     ];
 }

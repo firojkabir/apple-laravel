@@ -14,7 +14,7 @@
             <li><a href="/">Home</a></li>
         </ul>
         <ul class="flex items-center">
-            <li><a href="">Phones</a></li>
+            <li><a href="{{ route('phones') }}">Phones</a></li>
         </ul>
     </nav>
     
