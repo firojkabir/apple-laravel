@@ -20,3 +20,6 @@ Route::get('/', function () {
 
 Route::get('/phones', [PhoneController::class, 'index'])->name('phones');
 Route::post('/phones', [PhoneController::class, 'store']);
+Route::delete('/phones/{phone}', [PhoneController::class, 'destroy'])->name('phone.destroy');
+Route::get('/phones/{phone}/edit', [PhoneController::class, 'edit']);
+Route::put('/phones/{phone}', [PhoneController::class, 'update']);

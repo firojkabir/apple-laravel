@@ -16,6 +16,7 @@
         "postcss": "^8.1.14"
     },
     "dependencies": {
+        "laravel-bootstrap-table": "^0.0.5",
         "tailwindcss": "^2.2.7"
     }
 }
